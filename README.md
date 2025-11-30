@@ -7,6 +7,7 @@ The macros is working good on my printer, but double check everything before add
 Backup your configuration, then go to Machine G-code -> Machine start G-code. Replace all the content in the field with:
 
 START_PRINT BED=[bed_temperature_initial_layer_single] NOZZLE=[nozzle_temperature_initial_layer] CLEAN=200 IDLE=170
+
 PURGE_LINE
 
 The CLEAN is the nozzle tempature when cleaning the nozzle, and IDLE is the nozzle temperature when meshing the bed.
